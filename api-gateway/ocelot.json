@@ -1,0 +1,19 @@
+{
+    "Routes": [
+        {
+        "DownstreamPathTemplate": "/api/RemitterRegistration/{all}",
+        "DownstreamScheme": "http",
+        "DownstreamHostAndPorts": [
+            {
+                "Host": "localhost",
+                "Port": 5005
+            }
+        ],
+        "UpstreamPathTemplate": "/remittence-collection-api/{all}",
+        "UpstreamHttpMethod": [ "Get", "Post" ]
+        }
+    ],
+    "GlobalConfiguration": {
+        "BaseUrl": "https://localhost:5000"
+    }
+}
